@@ -1,3 +1,10 @@
-export const HeroSection = () => {
-  return <div>Hero Section</div>;
+
+const HeroSection = () => {
+  return (
+    <div>
+      hero section
+    </div>
+  );
 };
+
+export default HeroSection;
