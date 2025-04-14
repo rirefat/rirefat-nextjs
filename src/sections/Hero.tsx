@@ -25,15 +25,16 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <h1>Building Exceptional User Experience</h1>
-        <p>I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project.</p>
+        <h1 className='font-serif text-3xl text-center mt-8 tracking-wide'>Building Exceptional User Experience</h1>
+        <p className='mt-4 text-center text-white/60 '>I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project.</p>
 
-        <div>
-          <button>
+        <div className='flex flex-col items-center gap-3 mt-8'>
+          <button className='font-semibold inline-flex items-center gap-2 border border-white/15 rounded-xl px-6 h-12 hover:bg-white/10 hover:text-white transition duration-300'>
             <span>Explore My Works</span>
-            <ArrowDown />
+            <span>🔎</span>
+            {/* <ArrowDown className="size-4"/> */}
           </button>
-          <button>
+          <button className='font-semibold inline-flex items-center gap-2 border border-white bg-white text-gray-900 rounded-xl px-6 h-12 hover:bg-white/70 hover:text-gray-900 hover:border-transparent transition duration-300'>
             <span>👋🏻</span>
             <span>Let&apos;s Connect</span>
           </button>
