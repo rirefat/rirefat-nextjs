@@ -3,10 +3,11 @@ import memojiImage from '@/assets/images/memoji-computer.png';
 import ArrowDown from '@/assets/icons/arrow-down.svg';
 import Available from '@/assets/images/available.gif';
 import grainImage from '@/assets/images/grain.jpg';
+import StarIcons from '@/assets/icons/star.svg';
 
 const HeroSection = () => {
   return (
-    <div className='py-32 md:py-48 lg:py-60 relative z-0'>
+    <div className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
       <div className="absolute inset-0 -z-30 opacity-10"
         style={{
           backgroundImage: `url(${grainImage.src})`
@@ -17,6 +18,15 @@ const HeroSection = () => {
       <div className="size-[820px] hero-ring" />
       <div className="size-[1020px] hero-ring" />
       <div className="size-[1220px] hero-ring" />
+      <div className="size-[1450px] hero-ring" />
+
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+        <div className='size-[800px] animate-spin [animation-duration:15s]'>
+          <div className="inline-flex animate-spin [animation-duration:5s]">
+            <StarIcons className='size-28 text-blue-300' />
+          </div>
+        </div>
+      </div>
 
       <div className="container">
         <div className="flex flex-col items-center">
