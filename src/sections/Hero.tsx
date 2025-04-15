@@ -80,12 +80,12 @@ const HeroSection = () => {
         </div>
 
         <div className='flex flex-col md:flex-row justify-center items-center gap-3 mt-8'>
-          <button className='font-semibold inline-flex items-center gap-2 border border-white/15 rounded-xl px-6 h-12 hover:bg-white/10 hover:text-white transition duration-300'>
+          <button className='font-semibold inline-flex items-center gap-2 border border-white/15 rounded-xl px-6 h-12 hover:bg-white/10 hover:text-white transition duration-300 z-10'>
             <span>Explore My Works</span>
             <span>🔎</span>
             {/* <ArrowDown className="size-4"/> */}
           </button>
-          <button className='font-semibold inline-flex items-center gap-2 border border-white bg-white text-gray-900 rounded-xl px-6 h-12 hover:bg-white/70 hover:text-gray-900 hover:border-transparent transition duration-300'>
+          <button className='font-semibold inline-flex items-center gap-2 border border-white bg-white text-gray-900 rounded-xl px-6 h-12 hover:bg-white/70 hover:text-gray-900 hover:border-transparent transition duration-300 z-10'>
             <span>👋🏻</span>
             <span>Let&apos;s Connect</span>
           </button>
