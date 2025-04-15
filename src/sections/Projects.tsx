@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import CheckIcon from '@/assets/icons/check-circle.svg';
+import GithubIcon from '@/assets/icons/github.svg';
+import PreviewIcon from '@/assets/icons/preview.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
@@ -21,6 +23,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "https://youtu.be/4k7IdSLxh6w",
+    source: "https://github.com/yourusername/dark-saas-landing",
     image: darkSaasLandingPage,
   },
   {
@@ -33,6 +36,7 @@ const portfolioProjects = [
       { title: "Increased brand awareness by 15%" },
     ],
     link: "https://youtu.be/7hi5zwO75yc",
+    source: "https://github.com/yourusername/light-saas-landing",
     image: lightSaasLandingPage,
   },
   {
@@ -45,9 +49,11 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "https://youtu.be/Z7I5uSRHMHg",
+    source: "https://github.com/yourusername/ai-startup-landing",
     image: aiStartupLandingPage,
   },
 ];
+
 
 
 const ProjectsSection = () => {
@@ -90,12 +96,22 @@ const ProjectsSection = () => {
                     ))}
                   </ul>
 
-                  <Link href={project.link} className="">
-                    <button className="bg-white hover:bg-white/80 text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold mt-8 flex items-center justify-center gap-2">
-                      <span>Visit Live Site</span>
-                      <ArrowUpRightIcon className='size-5' />
-                    </button>
-                  </Link>
+                  <div className="flex flex-col md:flex-row gap-4 mt-8">
+                    <Link href={project.link} target="_blank">
+                      <button className="bg-white hover:bg-white/80 text-gray-950 h-12 px-6 rounded-xl font-semibold flex items-center justify-center gap-2 w-full md:w-auto">
+                        <span>Preview</span>
+                        <ArrowUpRightIcon className='size-5' />
+                      </button>
+                    </Link>
+
+                    <Link href={project.source} target="_blank">
+                      <button className="border border-white/30 text-white hover:bg-white/10 h-12 px-6 rounded-xl font-semibold flex items-center justify-center gap-2 w-full md:w-auto">
+                        <span>GitHub</span>
+                        <GithubIcon className='size-5' />
+                      </button>
+                    </Link>
+                  </div>
+
 
                 </div>
 
