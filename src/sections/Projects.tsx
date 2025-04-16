@@ -9,6 +9,7 @@ import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import grainImage from '@/assets/images/grain.jpg';
 import { url } from "inspector";
+import SectionHeader from "@/components/SectionHeader";
 
 
 
@@ -60,9 +61,15 @@ const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container">
-        <p className="uppercase text-center font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-blue-400 text-transparent bg-clip-text">Precision in Every Pixel</p>
+        {/* <p className="uppercase text-center font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-blue-400 text-transparent bg-clip-text">Precision in Every Pixel</p>
         <h2 className="font-serif text-center mt-6 text-3xl md:text-5xl">Crafted Creations</h2>
-        <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">Witness how abstract ideas evolve into immersive digital realities</p>
+        <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">Witness how abstract ideas evolve into immersive digital realities</p> */}
+
+        <SectionHeader
+          title="Crafted Creations"
+          subtitle="Precision in Every Pixel"
+          text="Witness how abstract ideas evolve into immersive digital realities"
+        />
 
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project) => (
