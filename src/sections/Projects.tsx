@@ -72,7 +72,7 @@ const ProjectsSection = () => {
             >
 
               <div
-                className="absolute inset-0 -z-10 opacity-10"
+                className="absolute inset-0 -z-10 opacity-5"
                 style={{
                   backgroundImage: `url(${grainImage.src})`
                 }}
@@ -97,14 +97,14 @@ const ProjectsSection = () => {
                   </ul>
 
                   <div className="flex flex-col md:flex-row gap-4 mt-8">
-                    <Link href={project.link} target="_blank">
+                    <Link href="#" target="_blank">
                       <button className="bg-white hover:bg-white/80 text-gray-950 h-12 px-6 rounded-xl font-semibold flex items-center justify-center gap-2 w-full md:w-auto">
                         <span>Preview</span>
                         <ArrowUpRightIcon className='size-5' />
                       </button>
                     </Link>
 
-                    <Link href={project.source} target="_blank">
+                    <Link href="#" target="_blank">
                       <button className="border border-white/30 text-white hover:bg-white/10 h-12 px-6 rounded-xl font-semibold flex items-center justify-center gap-2 w-full md:w-auto">
                         <span>GitHub</span>
                         <GithubIcon className='size-5' />
