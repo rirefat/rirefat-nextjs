@@ -10,6 +10,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import grainImage from '@/assets/images/grain.jpg';
 import { url } from "inspector";
 import SectionHeader from "@/components/SectionHeader";
+import Card from "@/components/Card";
 
 
 
@@ -69,9 +70,9 @@ const ProjectsSection = () => {
 
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project) => (
-            <div
+            <Card
               key={project.title}
-              className="px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 bg-gray-800 rounded-3xl relative overflow-hidden z-0 after:z-10 after:content-[''] after:absolute after:inset-0 after:outline after:outline-white/20 after:outline-2 after:-outline-offset-2 after:rounded-3xl after:pointer-events-none"
+              className="px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
             >
 
               <div
@@ -126,7 +127,7 @@ const ProjectsSection = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
