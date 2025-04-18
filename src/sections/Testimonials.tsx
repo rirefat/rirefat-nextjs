@@ -3,8 +3,10 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import grainImage from '@/assets/images/grain.jpg';
 import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
+import Card from "@/components/Card";
 
 const testimonials = [
   {
@@ -42,22 +44,24 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div>
-      <SectionHeader
-        title="Voices of Appreciation"
-        subtitle="Happy Clients"
-        text="Insightful reflections from clients I have had the privilege to collaborate with"
-      />
+    <div className="py-16">
+      <div className="container">
+        <SectionHeader
+          title="Voices of Appreciation"
+          subtitle="Warm Testimonials"
+          text="Insightful reflections from clients I have had the privilege to collaborate with"
+        />
 
-      <div>
-        {testimonials.map(testimonial => (
-          <div key={testimonial.name}>
-            <Image src={testimonial.avatar} alt="Image of client" />
-            <div>{testimonial.name}</div>
-            <div>{testimonial.position}</div>
-            <p>{testimonial.text}</p>
-          </div>
-        ))}
+        <div>
+          {testimonials.map(testimonial => (
+            <Card key={testimonial.name} >
+              <Image src={testimonial.avatar} alt="Image of client" />
+              <div>{testimonial.name}</div>
+              <div>{testimonial.position}</div>
+              <p>{testimonial.text}</p>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );

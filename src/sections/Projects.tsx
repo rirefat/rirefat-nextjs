@@ -61,10 +61,6 @@ const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container">
-        {/* <p className="uppercase text-center font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-blue-400 text-transparent bg-clip-text">Precision in Every Pixel</p>
-        <h2 className="font-serif text-center mt-6 text-3xl md:text-5xl">Crafted Creations</h2>
-        <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">Witness how abstract ideas evolve into immersive digital realities</p> */}
-
         <SectionHeader
           title="Crafted Creations"
           subtitle="Precision in Every Pixel"
