@@ -10,33 +10,33 @@ import Card from "@/components/Card";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "Danielle Dino",
+    position: "Owner @ WEBCASA Design Agency",
+    text: "I work with many WordPress developers for the past 10 years and it is hard to find someone with the level of skills and strict attention to details. Rafiul is very excellent to work any project.",
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "Olga Harradine",
+    position: "Managing Director @ Clean to Concierge",
+    text: "Rafiul is brilliant to work with. He is responsive, knowledgeable and professional. Nothing was a problem. Anything tricky – he found a way to fix it. He is extremely fluent in English and everything produced was perfect. The workflow was fast and thorough. Highly recommend!",
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "THEDOG Teachings",
+    position: "Podcast Company",
+    text: "Rafiul goes above and beyond. He’s creative, enthusiastic and trustworthy. He’s done a great job with our site. Will be working with him again and again.",
     avatar: memojiAvatar3,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: "Vic Devore",
+    position: "CEO @ DEVOREDesign",
+    text: "Every time I need something fixed with my websites, Rafiul is my “go to” guy. He does great and gets everything done in a timely manner. Great communication. Thank you Rafiul!",
     avatar: memojiAvatar4,
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    name: "Ben Crandall",
+    position: "Co-Founder @ optimiser",
+    text: "Rafiul is a skilled, proactive, and friendly freelancer. Fast and accurate work provided for this task. Explained in terms I can understand. I will rehire Rafiul again.",
     avatar: memojiAvatar5,
   },
 ];
