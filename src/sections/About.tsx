@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import StarIcon from '@/assets/icons/star.svg';
@@ -10,50 +11,38 @@ import ExpressIcon from '@/assets/icons/express.svg';
 import WordPressIcon from '@/assets/icons/wordpress.svg';
 import ChromeIcon from '@/assets/icons/chrome.svg';
 import GithubIcon from '@/assets/icons/github.svg';
-import bookImage from '@/assets/images/book-cover.png';
-import Image from "next/image";
+import bookImage from '@/assets/images/book-cover.png';;
 import TechIcon from "@/components/TechIcon";
+import mapImage from '@/assets/images/map-dhaka.png';
+import smileImage from '@/assets/images/memoji-smile.png';
 
 
 
 const toolboxItems = [
-  {
-    title: "JavaScript",
-    iconType: JavascriptIcon
-  },
-  {
-    title: "React JS",
-    iconType: ReactIcon
-  },
-  {
-    title: "Next JS",
-    iconType: NextjsIcon
-  },
-  {
-    title: "MongoDB",
-    iconType: MongoDBIcon
-  },
-  {
-    title: "Node",
-    iconType: NodejsIcon
-  },
-  {
-    title: "Express JS",
-    iconType: ExpressIcon
-  },
-  {
-    title: "WordPress",
-    iconType: WordPressIcon
-  },
-  {
-    title: "Chrome",
-    iconType: ChromeIcon
-  },
-  {
-    title: "GitHub",
-    iconType: GithubIcon
-  },
-]
+  { title: "JavaScript", iconType: JavascriptIcon },
+  { title: "React JS", iconType: ReactIcon },
+  { title: "Next JS", iconType: NextjsIcon },
+  { title: "MongoDB", iconType: MongoDBIcon },
+  { title: "Node", iconType: NodejsIcon },
+  { title: "Express JS", iconType: ExpressIcon },
+  { title: "WordPress", iconType: WordPressIcon },
+  { title: "Chrome", iconType: ChromeIcon },
+  { title: "GitHub", iconType: GithubIcon },
+];
+
+const hobbies = [
+  { title: "TechBlogs", emoji: "📰" },
+  { title: "DevTalks", emoji: "🎥" },
+  { title: "Podcasts", emoji: "🎧" },
+  { title: "SideProjects", emoji: "🛠️" },
+  { title: "Gaming", emoji: "🎮" },
+  { title: "Photography", emoji: "📷" },
+  { title: "Traveling", emoji: "🌍" },
+  { title: "NonFiction", emoji: "📚" },
+  { title: "Fitness", emoji: "🏋️" },
+  { title: "Documentaries", emoji: "📽️" },
+];
+
 
 const AboutSection = () => {
   return (
@@ -98,6 +87,11 @@ const AboutSection = () => {
             <h3>Beyond The Code</h3>
             <p>Explore my interests and hobbies beyond the digital realm.</p>
           </div>
+        </Card>
+
+        <Card>
+          <Image src={mapImage} alt="My location" />
+          <Image src={smileImage} alt="smile face" />
         </Card>
       </div>
     </div>
